@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Korean (`ko`).
 class AppLocalizationsKo extends AppLocalizations {
-  AppLocalizationsKo() : super('ko');
+  AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
   String get appTitle => '고정 폭 레코드 검사기';
@@ -49,13 +55,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get inspectionResult => '검사 결과';
 
   @override
-  String rows(int count) => '행: $count';
+  String rows(int count) {
+    return '행: $count';
+  }
 
   @override
-  String expectedLength(int count) => '예상 길이: $count';
+  String expectedLength(int count) {
+    return '예상 길이: $count';
+  }
 
   @override
-  String matchingRows(int count) => '일치하는 행: $count';
+  String matchingRows(int count) {
+    return '일치하는 행: $count';
+  }
 
   @override
   String get allRowsMatch => '모든 행이 일치합니다';
@@ -67,26 +79,37 @@ class AppLocalizationsKo extends AppLocalizations {
   String get fieldPreview => '첫 번째 행 미리보기';
 
   @override
-  String fieldValue(int index, String value) => '필드 $index: $value';
+  String fieldValue(int index, String value) {
+    return '필드 $index: $value';
+  }
 
   @override
   String get emptyValue => '(비어 있음)';
 
   @override
-  String overflowValue(String value) => '초과 내용: $value';
+  String overflowValue(String value) {
+    return '초과 내용: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      '$row행 · 길이 $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return '$row행 · 길이 $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => '$count자 부족';
+  String shortBy(int count) {
+    return '$count자 부족';
+  }
 
   @override
-  String longBy(int count) => '$count자 초과';
+  String longBy(int count) {
+    return '$count자 초과';
+  }
 
   @override
-  String moreMismatches(int count) => '불일치 행 $count개 더 있음';
+  String moreMismatches(int count) {
+    return '불일치 행 $count개 더 있음';
+  }
 
   @override
   String get recordRequired => '레코드 텍스트를 입력하세요.';

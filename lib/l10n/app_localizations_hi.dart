@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Hindi (`hi`).
 class AppLocalizationsHi extends AppLocalizations {
-  AppLocalizationsHi() : super('hi');
+  AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
   String get appTitle => 'निश्चित चौड़ाई रिकॉर्ड निरीक्षक';
@@ -50,13 +56,19 @@ class AppLocalizationsHi extends AppLocalizations {
   String get inspectionResult => 'जाँच परिणाम';
 
   @override
-  String rows(int count) => 'पंक्तियाँ: $count';
+  String rows(int count) {
+    return 'पंक्तियाँ: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'अपेक्षित लंबाई: $count';
+  String expectedLength(int count) {
+    return 'अपेक्षित लंबाई: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'मिलती पंक्तियाँ: $count';
+  String matchingRows(int count) {
+    return 'मिलती पंक्तियाँ: $count';
+  }
 
   @override
   String get allRowsMatch => 'सभी पंक्तियाँ मेल खाती हैं';
@@ -68,26 +80,37 @@ class AppLocalizationsHi extends AppLocalizations {
   String get fieldPreview => 'पहली पंक्ति का पूर्वावलोकन';
 
   @override
-  String fieldValue(int index, String value) => 'फ़ील्ड $index: $value';
+  String fieldValue(int index, String value) {
+    return 'फ़ील्ड $index: $value';
+  }
 
   @override
   String get emptyValue => '(खाली)';
 
   @override
-  String overflowValue(String value) => 'अतिरिक्त: $value';
+  String overflowValue(String value) {
+    return 'अतिरिक्त: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'पंक्ति $row · लंबाई $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'पंक्ति $row · लंबाई $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => '$count कम';
+  String shortBy(int count) {
+    return '$count कम';
+  }
 
   @override
-  String longBy(int count) => '$count अधिक';
+  String longBy(int count) {
+    return '$count अधिक';
+  }
 
   @override
-  String moreMismatches(int count) => '$count और बेमेल पंक्तियाँ';
+  String moreMismatches(int count) {
+    return '$count और बेमेल पंक्तियाँ';
+  }
 
   @override
   String get recordRequired => 'रिकॉर्ड टेक्स्ट दर्ज करें।';

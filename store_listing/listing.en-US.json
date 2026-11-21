@@ -1,0 +1,9 @@
+{
+  "language": "en-US",
+  "title": "Fixed Width Record Inspector",
+  "short_description": "Preview field slices and find rows that do not match a fixed-width text layout",
+  "full_description": "Fixed Width Record Inspector\n\nPreview field slices and find rows that do not match a fixed-width text layout entirely offline.\n\nFeatures:\n• Simple, clear results\n• Works offline\n• Choose your preferred language in the app settings",
+  "contact_email": "contact@alinxs.com",
+  "contact_website": "https://alinxs.com",
+  "contact_phone": ""
+}

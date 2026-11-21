@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Russian (`ru`).
 class AppLocalizationsRu extends AppLocalizations {
-  AppLocalizationsRu() : super('ru');
+  AppLocalizationsRu([String locale = 'ru']) : super(locale);
 
   @override
   String get appTitle => 'Инспектор записей фиксированной ширины';
@@ -51,13 +57,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get inspectionResult => 'Результат проверки';
 
   @override
-  String rows(int count) => 'Строки: $count';
+  String rows(int count) {
+    return 'Строки: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'Ожидаемая длина: $count';
+  String expectedLength(int count) {
+    return 'Ожидаемая длина: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'Совпавшие строки: $count';
+  String matchingRows(int count) {
+    return 'Совпавшие строки: $count';
+  }
 
   @override
   String get allRowsMatch => 'Все строки совпадают';
@@ -69,26 +81,37 @@ class AppLocalizationsRu extends AppLocalizations {
   String get fieldPreview => 'Предпросмотр первой строки';
 
   @override
-  String fieldValue(int index, String value) => 'Поле $index: $value';
+  String fieldValue(int index, String value) {
+    return 'Поле $index: $value';
+  }
 
   @override
   String get emptyValue => '(пусто)';
 
   @override
-  String overflowValue(String value) => 'Остаток: $value';
+  String overflowValue(String value) {
+    return 'Остаток: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'Строка $row · длина $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'Строка $row · длина $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => 'Не хватает $count';
+  String shortBy(int count) {
+    return 'Не хватает $count';
+  }
 
   @override
-  String longBy(int count) => 'Лишних $count';
+  String longBy(int count) {
+    return 'Лишних $count';
+  }
 
   @override
-  String moreMismatches(int count) => 'Ещё $count несовпадающих строк';
+  String moreMismatches(int count) {
+    return 'Ещё $count несовпадающих строк';
+  }
 
   @override
   String get recordRequired => 'Введите текст записей.';

@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for English (`en`).
 class AppLocalizationsEn extends AppLocalizations {
-  AppLocalizationsEn() : super('en');
+  AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
   String get appTitle => 'Fixed Width Record Inspector';
@@ -50,13 +56,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get inspectionResult => 'Inspection result';
 
   @override
-  String rows(int count) => 'Rows: $count';
+  String rows(int count) {
+    return 'Rows: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'Expected length: $count';
+  String expectedLength(int count) {
+    return 'Expected length: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'Matching rows: $count';
+  String matchingRows(int count) {
+    return 'Matching rows: $count';
+  }
 
   @override
   String get allRowsMatch => 'All rows match';
@@ -68,26 +80,37 @@ class AppLocalizationsEn extends AppLocalizations {
   String get fieldPreview => 'First row preview';
 
   @override
-  String fieldValue(int index, String value) => 'Field $index: $value';
+  String fieldValue(int index, String value) {
+    return 'Field $index: $value';
+  }
 
   @override
   String get emptyValue => '(empty)';
 
   @override
-  String overflowValue(String value) => 'Overflow: $value';
+  String overflowValue(String value) {
+    return 'Overflow: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'Row $row · length $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'Row $row · length $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => 'Short by $count';
+  String shortBy(int count) {
+    return 'Short by $count';
+  }
 
   @override
-  String longBy(int count) => 'Long by $count';
+  String longBy(int count) {
+    return 'Long by $count';
+  }
 
   @override
-  String moreMismatches(int count) => '$count more mismatching rows';
+  String moreMismatches(int count) {
+    return '$count more mismatching rows';
+  }
 
   @override
   String get recordRequired => 'Enter record text.';

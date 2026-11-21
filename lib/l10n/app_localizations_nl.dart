@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Dutch Flemish (`nl`).
 class AppLocalizationsNl extends AppLocalizations {
-  AppLocalizationsNl() : super('nl');
+  AppLocalizationsNl([String locale = 'nl']) : super(locale);
 
   @override
   String get appTitle => 'Inspecteur voor records met vaste breedte';
@@ -50,13 +56,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String get inspectionResult => 'Inspectieresultaat';
 
   @override
-  String rows(int count) => 'Rijen: $count';
+  String rows(int count) {
+    return 'Rijen: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'Verwachte lengte: $count';
+  String expectedLength(int count) {
+    return 'Verwachte lengte: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'Overeenkomende rijen: $count';
+  String matchingRows(int count) {
+    return 'Overeenkomende rijen: $count';
+  }
 
   @override
   String get allRowsMatch => 'Alle rijen komen overeen';
@@ -68,26 +80,37 @@ class AppLocalizationsNl extends AppLocalizations {
   String get fieldPreview => 'Voorbeeld van eerste rij';
 
   @override
-  String fieldValue(int index, String value) => 'Veld $index: $value';
+  String fieldValue(int index, String value) {
+    return 'Veld $index: $value';
+  }
 
   @override
   String get emptyValue => '(leeg)';
 
   @override
-  String overflowValue(String value) => 'Overschot: $value';
+  String overflowValue(String value) {
+    return 'Overschot: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'Rij $row · lengte $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'Rij $row · lengte $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => '$count te kort';
+  String shortBy(int count) {
+    return '$count te kort';
+  }
 
   @override
-  String longBy(int count) => '$count te lang';
+  String longBy(int count) {
+    return '$count te lang';
+  }
 
   @override
-  String moreMismatches(int count) => 'Nog $count afwijkende rijen';
+  String moreMismatches(int count) {
+    return 'Nog $count afwijkende rijen';
+  }
 
   @override
   String get recordRequired => 'Voer recordtekst in.';

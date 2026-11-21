@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Arabic (`ar`).
 class AppLocalizationsAr extends AppLocalizations {
-  AppLocalizationsAr() : super('ar');
+  AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
   String get appTitle => 'فاحص السجلات ثابتة العرض';
@@ -50,13 +56,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get inspectionResult => 'نتيجة الفحص';
 
   @override
-  String rows(int count) => 'الصفوف: $count';
+  String rows(int count) {
+    return 'الصفوف: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'الطول المتوقع: $count';
+  String expectedLength(int count) {
+    return 'الطول المتوقع: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'الصفوف المطابقة: $count';
+  String matchingRows(int count) {
+    return 'الصفوف المطابقة: $count';
+  }
 
   @override
   String get allRowsMatch => 'كل الصفوف متطابقة';
@@ -68,26 +80,37 @@ class AppLocalizationsAr extends AppLocalizations {
   String get fieldPreview => 'معاينة الصف الأول';
 
   @override
-  String fieldValue(int index, String value) => 'الحقل $index: $value';
+  String fieldValue(int index, String value) {
+    return 'الحقل $index: $value';
+  }
 
   @override
   String get emptyValue => '(فارغ)';
 
   @override
-  String overflowValue(String value) => 'المحتوى الزائد: $value';
+  String overflowValue(String value) {
+    return 'المحتوى الزائد: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'الصف $row · الطول $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'الصف $row · الطول $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => 'أقصر بمقدار $count';
+  String shortBy(int count) {
+    return 'أقصر بمقدار $count';
+  }
 
   @override
-  String longBy(int count) => 'أطول بمقدار $count';
+  String longBy(int count) {
+    return 'أطول بمقدار $count';
+  }
 
   @override
-  String moreMismatches(int count) => '$count صفوف أخرى غير متطابقة';
+  String moreMismatches(int count) {
+    return '$count صفوف أخرى غير متطابقة';
+  }
 
   @override
   String get recordRequired => 'أدخل نص السجلات.';

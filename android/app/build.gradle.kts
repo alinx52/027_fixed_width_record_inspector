@@ -6,6 +6,8 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+
+
 // app_factory admob: begin
 val factoryAdMobProperties = Properties()
 val factoryAdMobPropertiesFile = rootProject.file("admob.properties")
@@ -61,6 +63,8 @@ android {
     manifestPlaceholders["admobAppId"] = factoryAdMobAppId
     // app_factory admob: end
 
+    
+
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.alinxs.apps.fixed_width_record_inspector"
         // You can update the following values to match your application needs.
@@ -77,6 +81,8 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
+
+    
 
     // app_factory release signing: begin
     signingConfigs {

@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Vietnamese (`vi`).
 class AppLocalizationsVi extends AppLocalizations {
-  AppLocalizationsVi() : super('vi');
+  AppLocalizationsVi([String locale = 'vi']) : super(locale);
 
   @override
   String get appTitle => 'Trình kiểm tra bản ghi độ rộng cố định';
@@ -50,13 +56,19 @@ class AppLocalizationsVi extends AppLocalizations {
   String get inspectionResult => 'Kết quả kiểm tra';
 
   @override
-  String rows(int count) => 'Số hàng: $count';
+  String rows(int count) {
+    return 'Số hàng: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'Độ dài dự kiến: $count';
+  String expectedLength(int count) {
+    return 'Độ dài dự kiến: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'Số hàng khớp: $count';
+  String matchingRows(int count) {
+    return 'Số hàng khớp: $count';
+  }
 
   @override
   String get allRowsMatch => 'Tất cả các hàng đều khớp';
@@ -68,26 +80,37 @@ class AppLocalizationsVi extends AppLocalizations {
   String get fieldPreview => 'Xem trước hàng đầu tiên';
 
   @override
-  String fieldValue(int index, String value) => 'Trường $index: $value';
+  String fieldValue(int index, String value) {
+    return 'Trường $index: $value';
+  }
 
   @override
   String get emptyValue => '(trống)';
 
   @override
-  String overflowValue(String value) => 'Phần dư: $value';
+  String overflowValue(String value) {
+    return 'Phần dư: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'Hàng $row · độ dài $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'Hàng $row · độ dài $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => 'Thiếu $count';
+  String shortBy(int count) {
+    return 'Thiếu $count';
+  }
 
   @override
-  String longBy(int count) => 'Thừa $count';
+  String longBy(int count) {
+    return 'Thừa $count';
+  }
 
   @override
-  String moreMismatches(int count) => 'Còn $count hàng không khớp';
+  String moreMismatches(int count) {
+    return 'Còn $count hàng không khớp';
+  }
 
   @override
   String get recordRequired => 'Hãy nhập văn bản bản ghi.';

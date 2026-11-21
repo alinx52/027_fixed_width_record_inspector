@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Japanese (`ja`).
 class AppLocalizationsJa extends AppLocalizations {
-  AppLocalizationsJa() : super('ja');
+  AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
   String get appTitle => '固定幅レコード検査';
@@ -49,13 +55,19 @@ class AppLocalizationsJa extends AppLocalizations {
   String get inspectionResult => '検査結果';
 
   @override
-  String rows(int count) => '行数: $count';
+  String rows(int count) {
+    return '行数: $count';
+  }
 
   @override
-  String expectedLength(int count) => '想定文字数: $count';
+  String expectedLength(int count) {
+    return '想定文字数: $count';
+  }
 
   @override
-  String matchingRows(int count) => '一致した行: $count';
+  String matchingRows(int count) {
+    return '一致した行: $count';
+  }
 
   @override
   String get allRowsMatch => 'すべての行が一致';
@@ -67,26 +79,37 @@ class AppLocalizationsJa extends AppLocalizations {
   String get fieldPreview => '先頭行のプレビュー';
 
   @override
-  String fieldValue(int index, String value) => 'フィールド $index: $value';
+  String fieldValue(int index, String value) {
+    return 'フィールド $index: $value';
+  }
 
   @override
   String get emptyValue => '（空）';
 
   @override
-  String overflowValue(String value) => '超過: $value';
+  String overflowValue(String value) {
+    return '超過: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      '$row 行目・長さ $actual・$status';
+  String mismatchRow(int row, int actual, String status) {
+    return '$row 行目・長さ $actual・$status';
+  }
 
   @override
-  String shortBy(int count) => '$count 文字不足';
+  String shortBy(int count) {
+    return '$count 文字不足';
+  }
 
   @override
-  String longBy(int count) => '$count 文字超過';
+  String longBy(int count) {
+    return '$count 文字超過';
+  }
 
   @override
-  String moreMismatches(int count) => 'ほか $count 行が不一致';
+  String moreMismatches(int count) {
+    return 'ほか $count 行が不一致';
+  }
 
   @override
   String get recordRequired => 'レコードテキストを入力してください。';

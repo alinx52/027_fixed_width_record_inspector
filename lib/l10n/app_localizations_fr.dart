@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for French (`fr`).
 class AppLocalizationsFr extends AppLocalizations {
-  AppLocalizationsFr() : super('fr');
+  AppLocalizationsFr([String locale = 'fr']) : super(locale);
 
   @override
   String get appTitle => 'Inspecteur d’enregistrements à largeur fixe';
@@ -50,13 +56,19 @@ class AppLocalizationsFr extends AppLocalizations {
   String get inspectionResult => 'Résultat de l’inspection';
 
   @override
-  String rows(int count) => 'Lignes : $count';
+  String rows(int count) {
+    return 'Lignes : $count';
+  }
 
   @override
-  String expectedLength(int count) => 'Longueur attendue : $count';
+  String expectedLength(int count) {
+    return 'Longueur attendue : $count';
+  }
 
   @override
-  String matchingRows(int count) => 'Lignes conformes : $count';
+  String matchingRows(int count) {
+    return 'Lignes conformes : $count';
+  }
 
   @override
   String get allRowsMatch => 'Toutes les lignes sont conformes';
@@ -68,26 +80,37 @@ class AppLocalizationsFr extends AppLocalizations {
   String get fieldPreview => 'Aperçu de la première ligne';
 
   @override
-  String fieldValue(int index, String value) => 'Champ $index : $value';
+  String fieldValue(int index, String value) {
+    return 'Champ $index : $value';
+  }
 
   @override
   String get emptyValue => '(vide)';
 
   @override
-  String overflowValue(String value) => 'Dépassement : $value';
+  String overflowValue(String value) {
+    return 'Dépassement : $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'Ligne $row · longueur $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'Ligne $row · longueur $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => 'Il manque $count';
+  String shortBy(int count) {
+    return 'Il manque $count';
+  }
 
   @override
-  String longBy(int count) => 'Dépasse de $count';
+  String longBy(int count) {
+    return 'Dépasse de $count';
+  }
 
   @override
-  String moreMismatches(int count) => '$count autres lignes non conformes';
+  String moreMismatches(int count) {
+    return '$count autres lignes non conformes';
+  }
 
   @override
   String get recordRequired => 'Saisissez le texte des enregistrements.';

@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Spanish Castilian (`es`).
 class AppLocalizationsEs extends AppLocalizations {
-  AppLocalizationsEs() : super('es');
+  AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
   String get appTitle => 'Inspector de registros de ancho fijo';
@@ -50,13 +56,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String get inspectionResult => 'Resultado de la inspección';
 
   @override
-  String rows(int count) => 'Filas: $count';
+  String rows(int count) {
+    return 'Filas: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'Longitud esperada: $count';
+  String expectedLength(int count) {
+    return 'Longitud esperada: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'Filas coincidentes: $count';
+  String matchingRows(int count) {
+    return 'Filas coincidentes: $count';
+  }
 
   @override
   String get allRowsMatch => 'Todas las filas coinciden';
@@ -68,26 +80,37 @@ class AppLocalizationsEs extends AppLocalizations {
   String get fieldPreview => 'Vista previa de la primera fila';
 
   @override
-  String fieldValue(int index, String value) => 'Campo $index: $value';
+  String fieldValue(int index, String value) {
+    return 'Campo $index: $value';
+  }
 
   @override
   String get emptyValue => '(vacío)';
 
   @override
-  String overflowValue(String value) => 'Excedente: $value';
+  String overflowValue(String value) {
+    return 'Excedente: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'Fila $row · longitud $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'Fila $row · longitud $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => 'Faltan $count';
+  String shortBy(int count) {
+    return 'Faltan $count';
+  }
 
   @override
-  String longBy(int count) => 'Sobran $count';
+  String longBy(int count) {
+    return 'Sobran $count';
+  }
 
   @override
-  String moreMismatches(int count) => '$count filas no coincidentes más';
+  String moreMismatches(int count) {
+    return '$count filas no coincidentes más';
+  }
 
   @override
   String get recordRequired => 'Introduce el texto de los registros.';

@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for Indonesian (`id`).
 class AppLocalizationsId extends AppLocalizations {
-  AppLocalizationsId() : super('id');
+  AppLocalizationsId([String locale = 'id']) : super(locale);
 
   @override
   String get appTitle => 'Pemeriksa Rekaman Lebar Tetap';
@@ -50,13 +56,19 @@ class AppLocalizationsId extends AppLocalizations {
   String get inspectionResult => 'Hasil pemeriksaan';
 
   @override
-  String rows(int count) => 'Baris: $count';
+  String rows(int count) {
+    return 'Baris: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'Panjang yang diharapkan: $count';
+  String expectedLength(int count) {
+    return 'Panjang yang diharapkan: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'Baris yang cocok: $count';
+  String matchingRows(int count) {
+    return 'Baris yang cocok: $count';
+  }
 
   @override
   String get allRowsMatch => 'Semua baris cocok';
@@ -68,26 +80,37 @@ class AppLocalizationsId extends AppLocalizations {
   String get fieldPreview => 'Pratinjau baris pertama';
 
   @override
-  String fieldValue(int index, String value) => 'Bidang $index: $value';
+  String fieldValue(int index, String value) {
+    return 'Bidang $index: $value';
+  }
 
   @override
   String get emptyValue => '(kosong)';
 
   @override
-  String overflowValue(String value) => 'Kelebihan: $value';
+  String overflowValue(String value) {
+    return 'Kelebihan: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'Baris $row · panjang $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'Baris $row · panjang $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => 'Kurang $count';
+  String shortBy(int count) {
+    return 'Kurang $count';
+  }
 
   @override
-  String longBy(int count) => 'Lebih $count';
+  String longBy(int count) {
+    return 'Lebih $count';
+  }
 
   @override
-  String moreMismatches(int count) => '$count baris tidak cocok lainnya';
+  String moreMismatches(int count) {
+    return '$count baris tidak cocok lainnya';
+  }
 
   @override
   String get recordRequired => 'Masukkan teks rekaman.';

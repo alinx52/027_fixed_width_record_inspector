@@ -1,7 +1,13 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
+// ignore_for_file: type=lint
+
+/// The translations for German (`de`).
 class AppLocalizationsDe extends AppLocalizations {
-  AppLocalizationsDe() : super('de');
+  AppLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
   String get appTitle => 'Prüfer für Datensätze fester Breite';
@@ -50,13 +56,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get inspectionResult => 'Prüfergebnis';
 
   @override
-  String rows(int count) => 'Zeilen: $count';
+  String rows(int count) {
+    return 'Zeilen: $count';
+  }
 
   @override
-  String expectedLength(int count) => 'Erwartete Länge: $count';
+  String expectedLength(int count) {
+    return 'Erwartete Länge: $count';
+  }
 
   @override
-  String matchingRows(int count) => 'Passende Zeilen: $count';
+  String matchingRows(int count) {
+    return 'Passende Zeilen: $count';
+  }
 
   @override
   String get allRowsMatch => 'Alle Zeilen passen';
@@ -68,26 +80,37 @@ class AppLocalizationsDe extends AppLocalizations {
   String get fieldPreview => 'Vorschau der ersten Zeile';
 
   @override
-  String fieldValue(int index, String value) => 'Feld $index: $value';
+  String fieldValue(int index, String value) {
+    return 'Feld $index: $value';
+  }
 
   @override
   String get emptyValue => '(leer)';
 
   @override
-  String overflowValue(String value) => 'Überhang: $value';
+  String overflowValue(String value) {
+    return 'Überhang: $value';
+  }
 
   @override
-  String mismatchRow(int row, int actual, String status) =>
-      'Zeile $row · Länge $actual · $status';
+  String mismatchRow(int row, int actual, String status) {
+    return 'Zeile $row · Länge $actual · $status';
+  }
 
   @override
-  String shortBy(int count) => '$count zu kurz';
+  String shortBy(int count) {
+    return '$count zu kurz';
+  }
 
   @override
-  String longBy(int count) => '$count zu lang';
+  String longBy(int count) {
+    return '$count zu lang';
+  }
 
   @override
-  String moreMismatches(int count) => '$count weitere abweichende Zeilen';
+  String moreMismatches(int count) {
+    return '$count weitere abweichende Zeilen';
+  }
 
   @override
   String get recordRequired => 'Datensatztext eingeben.';

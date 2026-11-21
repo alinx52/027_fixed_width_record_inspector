@@ -1,0 +1,3 @@
+# Copy to admob.properties. Never commit the real production IDs.
+appId=ca-app-pub-REPLACE~WITH_REAL_ANDROID_APP_ID
+bannerAdUnitId=ca-app-pub-REPLACE/WITH_REAL_BANNER_UNIT_ID

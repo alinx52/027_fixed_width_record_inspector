@@ -1,0 +1,5 @@
+# Copy to key.properties and replace every placeholder. Never commit key.properties.
+storePassword=REPLACE_WITH_KEYSTORE_PASSWORD
+keyPassword=REPLACE_WITH_KEY_PASSWORD
+keyAlias=REPLACE_WITH_KEY_ALIAS
+storeFile=/absolute/path/to/upload-keystore.jks

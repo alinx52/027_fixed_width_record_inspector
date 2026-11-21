@@ -1,0 +1,13 @@
+{
+  "appTitle": "Fixed Width Record Inspector",
+  "@appTitle": {
+    "description": "The app title shown in the system UI."
+  },
+  "appDescription": "Preview field slices and find rows that do not match a fixed-width text layout entirely offline.",
+  "@appDescription": {
+    "description": "The short description shown on the home page."
+  },
+  "languageEnglish": "English",
+  "languageKorean": "한국어",
+  "privacyPolicy": "Privacy policy"
+}

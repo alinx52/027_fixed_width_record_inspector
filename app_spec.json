@@ -1,0 +1,123 @@
+{
+  "name": "fixed_width_record_inspector",
+  "org": "com.alinxs.apps",
+  "title": "Fixed Width Record Inspector",
+  "description": "Preview field slices and find rows that do not match a fixed-width text layout entirely offline.",
+  "korean_summary": "고정 폭 텍스트와 쉼표로 구분한 필드 너비를 입력하면 각 위치의 필드 미리보기와 길이가 맞지 않는 행을 오프라인으로 확인할 수 있습니다. 계정, 파일 접근, 클립보드 자동 읽기, 서버 저장 없이 입력과 결과를 현재 세션의 기기 안에서만 처리하며, 작업을 가리지 않는 표준 크기 AdMob 배너 하나만 표시합니다.",
+  "design_system": {
+    "style": "minimal_material",
+    "seed_color": "#455D7A",
+    "theme_mode": "system",
+    "density": "compact",
+    "corner_style": "medium",
+    "motion": "subtle"
+  },
+  "icon": {
+    "foreground": "#FFFFFF",
+    "secondary": "segmented_record",
+    "version": 1,
+    "primary": "ruler_spacing",
+    "composition": "centered_safe_zone",
+    "background": "#455D7A",
+    "source": null
+  },
+  "requirements": "Build a compact English-first Flutter Android utility whose first phone viewport explains fixed-width record inspection and shows a multiline Record text input, a Field widths input, and one obvious Inspect records action above the footer and banner. Accept field widths as comma-separated positive base-10 integers, ignoring surrounding ASCII spaces; require 1 to 50 widths, allow each width from 1 to 1000, and limit their sum to 10000. Accept at most 1000 physical rows and 100000 Unicode grapheme clusters of record text. Treat LF and CRLF as row boundaries, ignore one final line break, preserve blank rows, and measure each row in user-perceived Unicode grapheme clusters rather than UTF-16 code units. The sum of the field widths is the expected row length. For every row, classify an exact length as matching, a shorter length as short by the difference, and a longer length as long by the difference. Show Rows, Expected length, Matching rows, and either All rows match or Needs review. List at most the first 20 mismatching one-based row numbers with actual length and Short by N or Long by N, followed by a remaining-count message when needed. Always show a field preview for the first row: slice consecutive grapheme clusters using the declared widths, display Field N: value for available content, use the localized marker (empty) for a zero-content slice, and show Overflow: value when content remains beyond the declared total. For Record text ABC12345WXYZ followed by DEF67890QRST on the next row and Field widths 3,5,4, show Rows: 2, Expected length: 12, Matching rows: 2, All rows match, Field 1: ABC, Field 2: 12345, and Field 3: WXYZ. Reject empty record text, empty or malformed width lists, zero or out-of-range widths, excessive total width, too many rows, and oversized text with localized validation while preserving the last valid result. Provide Clear input as a secondary action. Do not open or save files, infer byte encodings, access the clipboard automatically, retain history, transmit record text, or request storage, contacts, location, camera, notification, or other sensitive permissions. Keep all inputs and results on-device for the current session, require no account or backend, and use no network access except the AdMob SDK. Preserve the generated design system and buildAppTheme integration. Provide complete ARB translations without English substitutions for en, ko, ja, zh_Hans, zh_Hant, es, fr, de, pt_BR, it, nl, ru, ar, hi, id, and vi, including RTL-safe Arabic layouts. Put an immediately usable compact AppBar language menu showing the current locale code and a chevron on the first screen, persist the selected locale with shared_preferences, restore it on later launches, and use English only as the first-run fallback. Put the session-only AppAppearanceMenu immediately to the left of the in-app privacy-policy action in a bottom-centered footer directly above exactly one non-intrusive standard AdSize.banner, exposing only minimal_material, flat, and soft. The banner must never cover the purpose, inputs, primary action, validation, results, preview, or footer. Deterministic widget tests must verify the exact two-row 3,5,4 sample; short, long, blank, CRLF, final-line-break, combining-character, emoji, empty-slice, and overflow behavior; the 20-row mismatch display limit; each stated validation error while retaining the last valid result; persisted locale restoration; and switching from English to Arabic translates labels, applies RTL layout without clipping, and preserves inputs and results.",
+  "planning": {
+    "source": "codex",
+    "priority": 0,
+    "launch_scope": "global",
+    "problem": "Adults working with copied fixed-width records need a quick way to confirm positional field boundaries and locate rows with incorrect lengths without uploading potentially private text.",
+    "audience": "Adult global users who inspect small fixed-width text samples used in data exchange, reports, device output, or legacy workflows.",
+    "differentiator": "Unlike the portfolio's delimited-text inspector, this utility applies explicit positional widths with no delimiter or quoting rules, previews each declared span, and reports rows that are short or long relative to the fixed layout.",
+    "monetization": "One standard-size AdMob banner remains below the bottom-centered appearance and privacy footer and never covers the record input, width pattern, validation, preview, results, or primary action.",
+    "privacy": "No account, backend, server-side input storage, saved history, file access, or automatic clipboard access; entered records and inspection results remain on-device for the current session, with AdMob advertising disclosed separately.",
+    "test_scenarios": "Widget tests cover the exact two-row ABC12345WXYZ and DEF67890QRST sample with widths 3,5,4; short, long, blank, CRLF, ignored final line break, Unicode grapheme, empty-slice, overflow, and mismatch-limit behavior; every stated invalid input with last-result retention; persisted locale restoration; and English-to-Arabic switching with translated RTL layout and preserved state."
+  },
+  "deployment": {
+    "play": {
+      "default_language": "en-US",
+      "app_type": "app",
+      "pricing": "free"
+    },
+    "content": {
+      "contains_ads": true,
+      "target_audience": "teens_and_adults",
+      "user_generated_content": false
+    },
+    "data_safety": {
+      "account_required": false,
+      "app_inputs_server_stored": false,
+      "third_party_sdks": [
+        "admob"
+      ]
+    },
+    "release": {
+      "launch_scope": "global",
+      "internal_test": true,
+      "production_approval_required": true,
+      "initial_production_rollout": 1.0
+    },
+    "admob_secret": "fixed_width_record_inspector_admob",
+    "category": "Tools"
+  },
+  "store_screenshots": [
+    {
+      "id": "phone-01",
+      "description": "Clean initial fixed-width inspection state with the record input, width pattern, and primary action visible.",
+      "actions": [],
+      "expected_texts": [
+        "Fixed Width Record Inspector",
+        "Record text",
+        "Field widths",
+        "Inspect records"
+      ],
+      "forbidden_texts": [
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    },
+    {
+      "id": "phone-02",
+      "description": "Inspect two concrete twelve-character records with a three-field fixed-width layout.",
+      "actions": [
+        {
+          "type": "input",
+          "target": "Record text",
+          "text": "ABC12345WXYZ\nDEF67890QRST"
+        },
+        {
+          "type": "input",
+          "target": "Field widths",
+          "text": "3,5,4"
+        },
+        {
+          "type": "tap",
+          "target": "Inspect records"
+        },
+        {
+          "type": "wait",
+          "seconds": 2
+        }
+      ],
+      "expected_texts": [
+        "Inspection result",
+        "Rows: 2",
+        "Expected length: 12",
+        "Matching rows: 2",
+        "All rows match",
+        "Field 1: ABC",
+        "Field 2: 12345",
+        "Field 3: WXYZ"
+      ],
+      "forbidden_texts": [
+        "Needs review",
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    }
+  ]
+}

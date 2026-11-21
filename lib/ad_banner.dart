@@ -14,13 +14,9 @@ class _AdBannerState extends State<AdBanner> {
   static const _releaseBannerId = String.fromEnvironment(
     'ADMOB_BANNER_AD_UNIT_ID',
   );
-  static const _hideBanner = bool.fromEnvironment(
-    'STORE_CAPTURE',
-    defaultValue: false,
-  ) || bool.fromEnvironment(
-    'DISABLE_ADS',
-    defaultValue: false,
-  );
+  static const _hideBanner =
+      bool.fromEnvironment('STORE_CAPTURE', defaultValue: false) ||
+      bool.fromEnvironment('DISABLE_ADS', defaultValue: false);
   static const _enableTestAds = bool.fromEnvironment(
     'ENABLE_TEST_ADS',
     defaultValue: false,

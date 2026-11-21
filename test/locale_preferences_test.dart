@@ -18,4 +18,28 @@ void main() {
     expect(AppLocalePreferences.parseLocaleTag(null), isNull);
     expect(AppLocalePreferences.parseLocaleTag(''), isNull);
   });
+
+  test('parses every required persisted locale tag', () {
+    const tags = <String>[
+      'en',
+      'ko',
+      'ja',
+      'zh-Hans',
+      'zh-Hant',
+      'es',
+      'fr',
+      'de',
+      'pt-BR',
+      'it',
+      'nl',
+      'ru',
+      'ar',
+      'hi',
+      'id',
+      'vi',
+    ];
+    for (final tag in tags) {
+      expect(AppLocalePreferences.parseLocaleTag(tag)?.toLanguageTag(), tag);
+    }
+  });
 }

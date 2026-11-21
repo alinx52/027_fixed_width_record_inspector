@@ -1,13 +1,200 @@
 {
   "appTitle": "Fixed Width Record Inspector",
   "@appTitle": {
-    "description": "The app title shown in the system UI."
+    "description": "Localized appTitle message."
   },
   "appDescription": "Preview field slices and find rows that do not match a fixed-width text layout entirely offline.",
   "@appDescription": {
-    "description": "The short description shown on the home page."
+    "description": "Localized appDescription message."
   },
-  "languageEnglish": "English",
-  "languageKorean": "한국어",
-  "privacyPolicy": "Privacy policy"
+  "languageTooltip": "Choose language",
+  "@languageTooltip": {
+    "description": "Localized languageTooltip message."
+  },
+  "privacyPolicy": "Privacy policy",
+  "@privacyPolicy": {
+    "description": "Localized privacyPolicy message."
+  },
+  "appearanceTooltip": "Choose appearance",
+  "@appearanceTooltip": {
+    "description": "Localized appearanceTooltip message."
+  },
+  "appearanceMaterial": "Material",
+  "@appearanceMaterial": {
+    "description": "Localized appearanceMaterial message."
+  },
+  "appearanceFlat": "Flat",
+  "@appearanceFlat": {
+    "description": "Localized appearanceFlat message."
+  },
+  "appearanceSoft": "Soft",
+  "@appearanceSoft": {
+    "description": "Localized appearanceSoft message."
+  },
+  "recordTextLabel": "Record text",
+  "@recordTextLabel": {
+    "description": "Localized recordTextLabel message."
+  },
+  "recordTextHint": "Paste or type fixed-width rows",
+  "@recordTextHint": {
+    "description": "Localized recordTextHint message."
+  },
+  "fieldWidthsLabel": "Field widths",
+  "@fieldWidthsLabel": {
+    "description": "Localized fieldWidthsLabel message."
+  },
+  "fieldWidthsHint": "For example: 3,5,4",
+  "@fieldWidthsHint": {
+    "description": "Localized fieldWidthsHint message."
+  },
+  "inspectRecords": "Inspect records",
+  "@inspectRecords": {
+    "description": "Localized inspectRecords message."
+  },
+  "clearInput": "Clear input",
+  "@clearInput": {
+    "description": "Localized clearInput message."
+  },
+  "inspectionResult": "Inspection result",
+  "@inspectionResult": {
+    "description": "Localized inspectionResult message."
+  },
+  "rows": "Rows: {count}",
+  "@rows": {
+    "description": "Localized rows message.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "expectedLength": "Expected length: {count}",
+  "@expectedLength": {
+    "description": "Localized expectedLength message.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matchingRows": "Matching rows: {count}",
+  "@matchingRows": {
+    "description": "Localized matchingRows message.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "allRowsMatch": "All rows match",
+  "@allRowsMatch": {
+    "description": "Localized allRowsMatch message."
+  },
+  "needsReview": "Needs review",
+  "@needsReview": {
+    "description": "Localized needsReview message."
+  },
+  "fieldPreview": "First row preview",
+  "@fieldPreview": {
+    "description": "Localized fieldPreview message."
+  },
+  "fieldValue": "Field {index}: {value}",
+  "@fieldValue": {
+    "description": "Localized fieldValue message.",
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyValue": "(empty)",
+  "@emptyValue": {
+    "description": "Localized emptyValue message."
+  },
+  "overflowValue": "Overflow: {value}",
+  "@overflowValue": {
+    "description": "Localized overflowValue message.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "mismatchRow": "Row {row} · length {actual} · {status}",
+  "@mismatchRow": {
+    "description": "Localized mismatchRow message.",
+    "placeholders": {
+      "row": {
+        "type": "int"
+      },
+      "actual": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "shortBy": "Short by {count}",
+  "@shortBy": {
+    "description": "Localized shortBy message.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "longBy": "Long by {count}",
+  "@longBy": {
+    "description": "Localized longBy message.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "moreMismatches": "{count} more mismatching rows",
+  "@moreMismatches": {
+    "description": "Localized moreMismatches message.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordRequired": "Enter record text.",
+  "@recordRequired": {
+    "description": "Localized recordRequired message."
+  },
+  "widthsRequired": "Enter field widths.",
+  "@widthsRequired": {
+    "description": "Localized widthsRequired message."
+  },
+  "widthsMalformed": "Use comma-separated positive whole numbers.",
+  "@widthsMalformed": {
+    "description": "Localized widthsMalformed message."
+  },
+  "widthCountInvalid": "Enter between 1 and 50 field widths.",
+  "@widthCountInvalid": {
+    "description": "Localized widthCountInvalid message."
+  },
+  "widthOutOfRange": "Each field width must be from 1 to 1000.",
+  "@widthOutOfRange": {
+    "description": "Localized widthOutOfRange message."
+  },
+  "widthTotalTooLarge": "The total field width cannot exceed 10000.",
+  "@widthTotalTooLarge": {
+    "description": "Localized widthTotalTooLarge message."
+  },
+  "tooManyRows": "Record text cannot exceed 1000 rows.",
+  "@tooManyRows": {
+    "description": "Localized tooManyRows message."
+  },
+  "textTooLarge": "Record text cannot exceed 100000 characters.",
+  "@textTooLarge": {
+    "description": "Localized textTooLarge message."
+  }
 }

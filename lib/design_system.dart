@@ -12,11 +12,7 @@ const Color appDesignSeedColor = Color(0xFF455D7A);
 ThemeMode get appThemeMode =>
     appDesignThemeMode == 'light' ? ThemeMode.light : ThemeMode.system;
 
-const selectableAppearanceStyles = <String>[
-  'minimal_material',
-  'flat',
-  'soft',
-];
+const selectableAppearanceStyles = <String>['minimal_material', 'flat', 'soft'];
 
 ThemeData buildAppTheme(Brightness brightness, {String? styleOverride}) {
   final style = styleOverride ?? appDesignStyle;
@@ -52,7 +48,9 @@ ThemeData buildAppTheme(Brightness brightness, {String? styleOverride}) {
             : const Color(0xFFFCF7FB)
       : colorScheme.surface;
   final cardColor = isGlass
-      ? colorScheme.surface.withValues(alpha: brightness == Brightness.dark ? 0.72 : 0.86)
+      ? colorScheme.surface.withValues(
+          alpha: brightness == Brightness.dark ? 0.72 : 0.86,
+        )
       : isSoft || isNeumorphic
       ? colorScheme.secondaryContainer.withValues(alpha: 0.45)
       : isFlat
@@ -87,7 +85,9 @@ ThemeData buildAppTheme(Brightness brightness, {String? styleOverride}) {
     inputDecorationTheme: InputDecorationTheme(
       isDense: appDesignDensity == 'compact',
       filled: true,
-      fillColor: isSoft ? colorScheme.secondaryContainer.withValues(alpha: 0.35) : cardColor,
+      fillColor: isSoft
+          ? colorScheme.secondaryContainer.withValues(alpha: 0.35)
+          : cardColor,
       contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
       border: OutlineInputBorder(borderRadius: controlRadius),
       enabledBorder: OutlineInputBorder(
@@ -130,17 +130,26 @@ class AppAppearanceMenu extends StatelessWidget {
     super.key,
     required this.selectedStyle,
     required this.onSelected,
+    required this.tooltip,
+    required this.materialLabel,
+    required this.flatLabel,
+    required this.softLabel,
   });
 
   final String selectedStyle;
   final ValueChanged<String> onSelected;
+  final String tooltip;
+  final String materialLabel;
+  final String flatLabel;
+  final String softLabel;
 
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<String>(
       key: const ValueKey('appearance-menu'),
+      tooltip: tooltip,
       onSelected: onSelected,
-      child: _AppearanceTrigger(),
+      child: _AppearanceTrigger(semanticLabel: tooltip),
       itemBuilder: (context) => [
         for (final style in selectableAppearanceStyles)
           PopupMenuItem<String>(
@@ -149,6 +158,11 @@ class AppAppearanceMenu extends StatelessWidget {
             child: _AppearancePreview(
               style: style,
               selected: style == selectedStyle,
+              label: switch (style) {
+                'flat' => flatLabel,
+                'soft' => softLabel,
+                _ => materialLabel,
+              },
             ),
           ),
       ],
@@ -157,18 +171,24 @@ class AppAppearanceMenu extends StatelessWidget {
 }
 
 class _AppearanceTrigger extends StatelessWidget {
+  const _AppearanceTrigger({required this.semanticLabel});
+
+  final String semanticLabel;
+
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     return Semantics(
       button: true,
-      label: 'Theme',
+      label: semanticLabel,
       child: Container(
         height: 40,
         padding: const EdgeInsetsDirectional.only(start: 10, end: 6),
         decoration: ShapeDecoration(
           color: colorScheme.surfaceContainerLow,
-          shape: StadiumBorder(side: BorderSide(color: colorScheme.outlineVariant)),
+          shape: StadiumBorder(
+            side: BorderSide(color: colorScheme.outlineVariant),
+          ),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
@@ -184,10 +204,15 @@ class _AppearanceTrigger extends StatelessWidget {
 }
 
 class _AppearancePreview extends StatelessWidget {
-  const _AppearancePreview({required this.style, required this.selected});
+  const _AppearancePreview({
+    required this.style,
+    required this.selected,
+    required this.label,
+  });
 
   final String style;
   final bool selected;
+  final String label;
 
   @override
   Widget build(BuildContext context) {
@@ -217,13 +242,7 @@ class _AppearancePreview extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 12),
-        Text(
-          switch (style) {
-            'flat' => 'Flat',
-            'soft' => 'Soft',
-            _ => 'Material',
-          },
-        ),
+        Text(label),
         const SizedBox(width: 16),
         Icon(
           selected ? Icons.check_circle : Icons.radio_button_unchecked,

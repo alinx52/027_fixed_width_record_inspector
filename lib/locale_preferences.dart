@@ -5,7 +5,6 @@ class AppLocalePreferences {
   AppLocalePreferences._();
 
   static const _localeKey = 'app.locale';
-  static final SharedPreferencesAsync _preferences = SharedPreferencesAsync();
 
   static Locale? parseLocaleTag(String? tag) {
     if (tag == null || tag.isEmpty) {
@@ -36,7 +35,8 @@ class AppLocalePreferences {
 
   static Future<Locale?> load() async {
     try {
-      return parseLocaleTag(await _preferences.getString(_localeKey));
+      final prefs = await SharedPreferences.getInstance();
+      return parseLocaleTag(prefs.getString(_localeKey));
     } catch (_) {
       return null;
     }
@@ -44,7 +44,8 @@ class AppLocalePreferences {
 
   static Future<void> save(Locale locale) async {
     try {
-      await _preferences.setString(_localeKey, locale.toLanguageTag());
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_localeKey, locale.toLanguageTag());
     } catch (_) {}
   }
 }

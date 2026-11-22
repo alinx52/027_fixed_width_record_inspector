@@ -34,5 +34,19 @@
   "widthOutOfRange": "Elke veldbreedte moet tussen 1 en 1000 liggen.",
   "widthTotalTooLarge": "De totale veldbreedte mag niet groter zijn dan 10000.",
   "tooManyRows": "Recordtekst mag niet meer dan 1000 rijen bevatten.",
-  "textTooLarge": "Recordtekst mag niet meer dan 100000 tekens bevatten."
+  "textTooLarge": "Recordtekst mag niet meer dan 100000 tekens bevatten.",
+  "helpTooltip": "Hulp en gids",
+  "helpTitle": "Gids voor vaste-breedterecordinspectie",
+  "helpProblemSolvedTitle": "Opgelost probleem",
+  "helpProblemSolvedContent": "Inspecteert vaste-breedterecords (bankgegevens, EDI) op basis van kolombreedtes en detecteert afwijkingen in regelengte.",
+  "helpHowToUseTitle": "Gebruiksaanwijzing",
+  "helpHowToUseContent": "Plak vaste-breedterecords, voer veldbreedtes in gescheiden door komma's (bijv. 10, 5, 20) en tik op Inspecteren.",
+  "helpReadingResultsTitle": "Resultaten aflezen",
+  "helpReadingResultsContent": "Toont verwachte regellengte, totale regels, conforme regels, veld-voor-veldweergave en signaleert te korte/lange regels.",
+  "helpExampleTitle": "Voorbeeld",
+  "helpExampleContent": "Breedtes: \"5, 10\" (Verwachte lengte = 15)\nRegel: \"12345ABCDEFGHIJ\" -> Veld 1: \"12345\", Veld 2: \"ABCDEFGHIJ\" (Geldig 15 tekens).",
+  "helpLimitsTitle": "Validatie & Beperkingen",
+  "helpLimitsContent": "Positioneel kolomgrenzenhulpmiddel. Valideert geen bedrijfslogica, bankstandaarden of EBCDIC-coderingen.",
+  "helpDataAndPrivacyTitle": "Lokale gegevens & Advertenties",
+  "helpDataAndPrivacyContent": "Alle records worden in het geheugen verwerkt zonder bestandstoegang of upload. Onderaan staat een AdMob-banner."
 }

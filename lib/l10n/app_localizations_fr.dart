@@ -138,4 +138,53 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get textTooLarge => 'Le texte ne peut pas dépasser 100000 caractères.';
+
+  @override
+  String get helpTooltip => 'Aide et guide';
+
+  @override
+  String get helpTitle =>
+      'Guide de l\'inspecteur d\'enregistrements à largeur fixe';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problème résolu';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Inspecte les enregistrements à largeur fixe (EDI, bancaires) selon les largeurs de colonnes, détectant les écarts de longueur.';
+
+  @override
+  String get helpHowToUseTitle => 'Mode d\'emploi';
+
+  @override
+  String get helpHowToUseContent =>
+      'Collez les enregistrements, saisissez les largeurs séparées par des virgules (ex. 10, 5, 20) et appuyez sur Inspecter.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lecture des résultats';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Affiche la longueur attendue, le total de lignes, les lignes conformes, l\'aperçu par champ et signale les lignes non conformes.';
+
+  @override
+  String get helpExampleTitle => 'Exemple';
+
+  @override
+  String get helpExampleContent =>
+      'Largeurs : \"5, 10\" (Longueur attendue = 15)\nLigne : \"12345ABCDEFGHIJ\" -> Champ 1 : \"12345\", Champ 2 : \"ABCDEFGHIJ\" (15 car. valide).';
+
+  @override
+  String get helpLimitsTitle => 'Validations et limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Outil de vérification positionnelle de colonnes. Ne valide pas la logique métier, les formats bancaires ni les encodages EBCDIC.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Données locales et publicités';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tous les enregistrements sont analysés en mémoire sans accès aux fichiers ni téléversement. Une bannière AdMob est affichée en bas.';
 }

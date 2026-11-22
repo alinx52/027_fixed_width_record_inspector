@@ -34,5 +34,19 @@
   "widthOutOfRange": "Ogni larghezza deve essere compresa tra 1 e 1000.",
   "widthTotalTooLarge": "La larghezza totale non può superare 10000.",
   "tooManyRows": "Il testo non può superare 1000 righe.",
-  "textTooLarge": "Il testo non può superare 100000 caratteri."
+  "textTooLarge": "Il testo non può superare 100000 caratteri.",
+  "helpTooltip": "Guida e aiuto",
+  "helpTitle": "Guida all'ispettore record a larghezza fissa",
+  "helpProblemSolvedTitle": "Problema risolto",
+  "helpProblemSolvedContent": "Ispeziona record di testo a larghezza fissa (bancari, EDI) in base alle larghezze definite, rilevando anomalie di lunghezza.",
+  "helpHowToUseTitle": "Come usare",
+  "helpHowToUseContent": "Incolla i record a larghezza fissa, inserisci le larghezze dei campi separate da virgola (es. 10, 5, 20) e tocca Ispeziona record.",
+  "helpReadingResultsTitle": "Lettura dei risultati",
+  "helpReadingResultsContent": "Mostra lunghezza attesa, totale righe, righe conformi, anteprima campo per campo e segnala righe troppo corte o lunghe.",
+  "helpExampleTitle": "Esempio",
+  "helpExampleContent": "Larghezze: \"5, 10\" (Lunghezza attesa = 15)\nRiga: \"12345ABCDEFGHIJ\" -> Campo 1: \"12345\", Campo 2: \"ABCDEFGHIJ\" (Validi 15 caratteri).",
+  "helpLimitsTitle": "Validazione e limitazioni",
+  "helpLimitsContent": "Ispettore di delimitazione posizionale delle colonne. Non convalida logiche di business, formati bancari o codifiche EBCDIC.",
+  "helpDataAndPrivacyTitle": "Dati locali e annunci",
+  "helpDataAndPrivacyContent": "Tutti i record sono analizzati in memoria senza accesso al file system né caricamenti. È visualizzato un banner AdMob standard."
 }

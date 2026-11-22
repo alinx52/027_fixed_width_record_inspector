@@ -135,4 +135,52 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get textTooLarge => 'Record text cannot exceed 100000 characters.';
+
+  @override
+  String get helpTooltip => 'Help & Guide';
+
+  @override
+  String get helpTitle => 'Fixed Width Record Inspector Guide';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problem Solved';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Inspects fixed-width positional text records (banking, EDI, mainframe exports) against column widths offline, detecting length discrepancies and boundary shifts.';
+
+  @override
+  String get helpHowToUseTitle => 'How to Use';
+
+  @override
+  String get helpHowToUseContent =>
+      'Paste fixed-width records, input comma-separated field widths (e.g. 10, 5, 20), and tap Inspect records to view parsed fields and anomalies.';
+
+  @override
+  String get helpReadingResultsTitle => 'Reading Results';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Shows expected line length, total lines, compliant lines, interactive field-by-field previews, and flags rows that are too short or long.';
+
+  @override
+  String get helpExampleTitle => 'Example';
+
+  @override
+  String get helpExampleContent =>
+      'Widths: \"5, 10\" (Expected length = 15)\nRow: \"12345ABCDEFGHIJ\" -> Field 1: \"12345\", Field 2: \"ABCDEFGHIJ\" (Valid 15 chars).';
+
+  @override
+  String get helpLimitsTitle => 'Validation & Limitations';
+
+  @override
+  String get helpLimitsContent =>
+      'Positional column boundary inspector only. Does not validate business logic, bank clearing formats, or character encoding variations (EBCDIC).';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Local Data & Ads';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'All record text is parsed in-memory on your device without file system access or external uploads. An AdMob banner is displayed below.';
 }

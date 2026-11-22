@@ -138,4 +138,52 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get textTooLarge => 'Il testo non può superare 100000 caratteri.';
+
+  @override
+  String get helpTooltip => 'Guida e aiuto';
+
+  @override
+  String get helpTitle => 'Guida all\'ispettore record a larghezza fissa';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema risolto';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Ispeziona record di testo a larghezza fissa (bancari, EDI) in base alle larghezze definite, rilevando anomalie di lunghezza.';
+
+  @override
+  String get helpHowToUseTitle => 'Come usare';
+
+  @override
+  String get helpHowToUseContent =>
+      'Incolla i record a larghezza fissa, inserisci le larghezze dei campi separate da virgola (es. 10, 5, 20) e tocca Ispeziona record.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lettura dei risultati';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra lunghezza attesa, totale righe, righe conformi, anteprima campo per campo e segnala righe troppo corte o lunghe.';
+
+  @override
+  String get helpExampleTitle => 'Esempio';
+
+  @override
+  String get helpExampleContent =>
+      'Larghezze: \"5, 10\" (Lunghezza attesa = 15)\nRiga: \"12345ABCDEFGHIJ\" -> Campo 1: \"12345\", Campo 2: \"ABCDEFGHIJ\" (Validi 15 caratteri).';
+
+  @override
+  String get helpLimitsTitle => 'Validazione e limitazioni';
+
+  @override
+  String get helpLimitsContent =>
+      'Ispettore di delimitazione posizionale delle colonne. Non convalida logiche di business, formati bancari o codifiche EBCDIC.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dati locali e annunci';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tutti i record sono analizzati in memoria senza accesso al file system né caricamenti. È visualizzato un banner AdMob standard.';
 }

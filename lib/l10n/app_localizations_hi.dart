@@ -139,4 +139,52 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get textTooLarge =>
       'रिकॉर्ड टेक्स्ट 100000 वर्णों से अधिक नहीं हो सकता।';
+
+  @override
+  String get helpTooltip => 'सहायता और मार्गदर्शिका';
+
+  @override
+  String get helpTitle => 'निश्चित चौड़ाई रिकॉर्ड निरीक्षक मार्गदर्शिका';
+
+  @override
+  String get helpProblemSolvedTitle => 'समस्या का समाधान';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'कॉलम चौड़ाई के आधार पर निश्चित चौड़ाई के टेक्स्ट रिकॉर्ड (बैंकिंग, EDI) का निरीक्षण करता है, लंबाई विसंगतियों का पता लगाता है।';
+
+  @override
+  String get helpHowToUseTitle => 'उपयोग कैसे करें';
+
+  @override
+  String get helpHowToUseContent =>
+      'निश्चित चौड़ाई के रिकॉर्ड चिपकाएं, अल्पविराम से अलग की गई फ़ील्ड चौड़ाई (उदा. 10, 5, 20) दर्ज करें और निरीक्षण करें दबाएं।';
+
+  @override
+  String get helpReadingResultsTitle => 'परिणाम कैसे समझें';
+
+  @override
+  String get helpReadingResultsContent =>
+      'अपेक्षित पंक्ति लंबाई, कुल पंक्तियाँ, अनुरूप पंक्तियाँ, फ़ील्ड-दर-फ़ील्ड पूर्वावलोकन दिखाता है और त्रुटिपूर्ण पंक्तियों को चिह्नित करता है।';
+
+  @override
+  String get helpExampleTitle => 'उदाहरण';
+
+  @override
+  String get helpExampleContent =>
+      'चौड़ाई: \"5, 10\" (अपेक्षित लंबाई = 15)\nपंक्ति: \"12345ABCDEFGHIJ\" -> फ़ील्ड 1: \"12345\", फ़ील्ड 2: \"ABCDEFGHIJ\" (मान्य 15 वर्ण)।';
+
+  @override
+  String get helpLimitsTitle => 'सत्यापन और सीमाएं';
+
+  @override
+  String get helpLimitsContent =>
+      'केवल स्थितीय कॉलम सीमा निरीक्षक है। व्यावसायिक तर्क, बैंक समाशोधन प्रारूप या EBCDIC एन्कोडिंग को मान्य नहीं करता है।';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'स्थानीय डेटा और विज्ञापन';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'सभी रिकॉर्ड टेक्स्ट बिना फ़ाइल एक्सेस या अपलोड के डिवाइस पर मेमोरी में पार्स किए जाते हैं। नीचे AdMob बैनर दिखाया गया है।';
 }

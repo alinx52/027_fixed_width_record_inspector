@@ -138,4 +138,52 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get textTooLarge =>
       'Teks rekaman tidak boleh melebihi 100000 karakter.';
+
+  @override
+  String get helpTooltip => 'Bantuan & Panduan';
+
+  @override
+  String get helpTitle => 'Panduan Pemeriksa Rekam Lebar Tetap';
+
+  @override
+  String get helpProblemSolvedTitle => 'Masalah yang Diatasi';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Memeriksa rekaman teks posisi lebar tetap (perbankan, EDI) berdasarkan lebar kolom, mendeteksi ketidaksesuaian panjang baris.';
+
+  @override
+  String get helpHowToUseTitle => 'Cara Penggunaan';
+
+  @override
+  String get helpHowToUseContent =>
+      'Tempel rekaman lebar tetap, masukkan lebar bidang dipisahkan koma (mis. 10, 5, 20), lalu ketuk Periksa rekaman.';
+
+  @override
+  String get helpReadingResultsTitle => 'Membaca Hasil';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Menampilkan panjang baris yang diharapkan, total baris, baris yang sesuai, pratinjau per bidang, dan menandai baris yang bermasalah.';
+
+  @override
+  String get helpExampleTitle => 'Contoh';
+
+  @override
+  String get helpExampleContent =>
+      'Lebar: \"5, 10\" (Panjang yang diharapkan = 15)\nBaris: \"12345ABCDEFGHIJ\" -> Bidang 1: \"12345\", Bidang 2: \"ABCDEFGHIJ\" (Valid 15 karakter).';
+
+  @override
+  String get helpLimitsTitle => 'Validasi & Batasan';
+
+  @override
+  String get helpLimitsContent =>
+      'Hanya alat pemeriksa batas kolom posisional. Tidak memvalidasi logika bisnis, format kliring bank, atau pengkodean EBCDIC.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Data Lokal & Iklan';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Semua teks rekam diurai di memori tanpa akses file atau unggahan eksternal. Spanduk AdMob ditampilkan di bawah.';
 }

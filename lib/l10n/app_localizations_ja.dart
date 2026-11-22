@@ -134,4 +134,52 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get textTooLarge => 'レコードテキストは100000文字以下にしてください。';
+
+  @override
+  String get helpTooltip => 'ヘルプと使い方';
+
+  @override
+  String get helpTitle => '固定幅レコード検証ガイド';
+
+  @override
+  String get helpProblemSolvedTitle => '解決する課題';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '金融、EDI、メインフレーム等で使用される固定幅テキストを定義された桁数ごとに分解し、長さの不一致やズレのある行をオフラインで検出します。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '固定幅テキストを貼り付け、各フィールドの桁数をカンマ区切りで入力（例: 10, 5, 20）し、「レコード検査」をタップします。';
+
+  @override
+  String get helpReadingResultsTitle => '結果の見方';
+
+  @override
+  String get helpReadingResultsContent =>
+      '期待行長、総行数、適合行数とともに、各フィールドの分割プレビューおよび長さが短い・長い異常行を表示します。';
+
+  @override
+  String get helpExampleTitle => '具体例';
+
+  @override
+  String get helpExampleContent =>
+      '幅: 「5, 10」（期待行長 = 15文字）\n行: \"12345ABCDEFGHIJ\" -> フィールド 1: \"12345\", フィールド 2: \"ABCDEFGHIJ\" (適合 15文字)。';
+
+  @override
+  String get helpLimitsTitle => '検証と制限事項';
+
+  @override
+  String get helpLimitsContent =>
+      '桁数に基づく位置境界の検査ツールです。各フィールドの業務的な正当性、銀行決済フォーマット、EBCDIC等の特殊文字コードを保証するものではありません。';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'ローカルデータと広告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '入力されたレコードはファイルアクセスや外部送信なしで端末のメモリ内でのみ処理されます。画面下部に標準AdMobバナーが表示されます。';
 }

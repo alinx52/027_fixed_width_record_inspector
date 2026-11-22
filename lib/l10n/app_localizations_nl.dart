@@ -140,4 +140,52 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get textTooLarge =>
       'Recordtekst mag niet meer dan 100000 tekens bevatten.';
+
+  @override
+  String get helpTooltip => 'Hulp en gids';
+
+  @override
+  String get helpTitle => 'Gids voor vaste-breedterecordinspectie';
+
+  @override
+  String get helpProblemSolvedTitle => 'Opgelost probleem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Inspecteert vaste-breedterecords (bankgegevens, EDI) op basis van kolombreedtes en detecteert afwijkingen in regelengte.';
+
+  @override
+  String get helpHowToUseTitle => 'Gebruiksaanwijzing';
+
+  @override
+  String get helpHowToUseContent =>
+      'Plak vaste-breedterecords, voer veldbreedtes in gescheiden door komma\'s (bijv. 10, 5, 20) en tik op Inspecteren.';
+
+  @override
+  String get helpReadingResultsTitle => 'Resultaten aflezen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Toont verwachte regellengte, totale regels, conforme regels, veld-voor-veldweergave en signaleert te korte/lange regels.';
+
+  @override
+  String get helpExampleTitle => 'Voorbeeld';
+
+  @override
+  String get helpExampleContent =>
+      'Breedtes: \"5, 10\" (Verwachte lengte = 15)\nRegel: \"12345ABCDEFGHIJ\" -> Veld 1: \"12345\", Veld 2: \"ABCDEFGHIJ\" (Geldig 15 tekens).';
+
+  @override
+  String get helpLimitsTitle => 'Validatie & Beperkingen';
+
+  @override
+  String get helpLimitsContent =>
+      'Positioneel kolomgrenzenhulpmiddel. Valideert geen bedrijfslogica, bankstandaarden of EBCDIC-coderingen.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale gegevens & Advertenties';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Alle records worden in het geheugen verwerkt zonder bestandstoegang of upload. Onderaan staat een AdMob-banner.';
 }

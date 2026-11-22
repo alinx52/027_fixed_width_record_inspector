@@ -135,4 +135,52 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get textTooLarge => 'لا يمكن أن يتجاوز النص 100000 حرف.';
+
+  @override
+  String get helpTooltip => 'المساعدة والدليل';
+
+  @override
+  String get helpTitle => 'دليل فاحص سجلات النصوص ثابتة العرض';
+
+  @override
+  String get helpProblemSolvedTitle => 'المشكلة التي يعالجها';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'يفحص سجلات النصوص الموضعية ثابتة العرض (المصرفية وEDI) وفق عروض الأعمدة المحددة، ويكتشف تباينات الطول والانزياح.';
+
+  @override
+  String get helpHowToUseTitle => 'طريقة الاستخدام';
+
+  @override
+  String get helpHowToUseContent =>
+      'الصق السجلات ثابتة العرض، وأدخل عروض الحقول مفصولة بفواصل (مثل 10, 5, 20)، ثم اضغط فحص السجلات.';
+
+  @override
+  String get helpReadingResultsTitle => 'قراءة النتائج';
+
+  @override
+  String get helpReadingResultsContent =>
+      'يعرض طول السطر المتوقع، وإجمالي الأسطر، والأسطر المتوافقة، ومعاينة الحقول، ويميز الأسطر القصيرة أو الطويلة جدًا.';
+
+  @override
+  String get helpExampleTitle => 'مثال توضيحي';
+
+  @override
+  String get helpExampleContent =>
+      'العروض: \"5, 10\" (الطول المتوقع = 15)\nالسطر: \"12345ABCDEFGHIJ\" -> الحقل 1: \"12345\"، الحقل 2: \"ABCDEFGHIJ\" (سليم 15 محرفًا).';
+
+  @override
+  String get helpLimitsTitle => 'التحقق والقيود';
+
+  @override
+  String get helpLimitsContent =>
+      'أداة فحص لمواضع حدود الأعمدة فقط. لا تتحقق من منطق العمل التجاري أو تنسيقات المقاصة المصرفية أو ترميزات EBCDIC.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'البيانات المحلية والإعلانات';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'يتم تحليل السجلات في الذاكرة دون الوصول إلى نظام الملفات أو الرفع الخارجي. يظهر شريط إعلاني قياسي من AdMob أسفل الشاشة.';
 }

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'help_page.dart';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -212,6 +213,18 @@ class _BottomArea extends StatelessWidget {
                     softLabel: l10n.appearanceSoft,
                   ),
                   const SizedBox(width: 4),
+                  IconButton(
+                    icon: const Icon(Icons.help_outline),
+                    tooltip: AppLocalizations.of(context).helpTooltip,
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (context) => const HelpPage(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 8),
                   TextButton.icon(
                     key: const ValueKey('privacy-policy'),
                     onPressed: () {

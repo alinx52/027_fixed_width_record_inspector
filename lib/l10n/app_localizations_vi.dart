@@ -138,4 +138,52 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get textTooLarge =>
       'Văn bản bản ghi không được vượt quá 100000 ký tự.';
+
+  @override
+  String get helpTooltip => 'Trợ giúp & Hướng dẫn';
+
+  @override
+  String get helpTitle => 'Hướng dẫn kiểm tra bản ghi độ rộng cố định';
+
+  @override
+  String get helpProblemSolvedTitle => 'Vấn đề giải quyết';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Kiểm tra các bản ghi văn bản có độ rộng cố định (ngân hàng, EDI) theo độ rộng cột, phát hiện sự chênh lệch độ dài và lệch cột.';
+
+  @override
+  String get helpHowToUseTitle => 'Cách sử dụng';
+
+  @override
+  String get helpHowToUseContent =>
+      'Dán các bản ghi độ rộng cố định, nhập độ rộng trường cách nhau bằng dấu phẩy (ví dụ 10, 5, 20) và nhấn Kiểm tra bản ghi.';
+
+  @override
+  String get helpReadingResultsTitle => 'Đọc kết quả';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Hiển thị độ dài dòng dự kiến, tổng số dòng, các dòng hợp lệ, xem trước từng trường và gắn cờ các dòng quá ngắn hoặc quá dài.';
+
+  @override
+  String get helpExampleTitle => 'Ví dụ';
+
+  @override
+  String get helpExampleContent =>
+      'Độ rộng: \"5, 10\" (Độ dài dự kiến = 15)\nDòng: \"12345ABCDEFGHIJ\" -> Trường 1: \"12345\", Trường 2: \"ABCDEFGHIJ\" (Hợp lệ 15 ký tự).';
+
+  @override
+  String get helpLimitsTitle => 'Xác thực & Giới hạn';
+
+  @override
+  String get helpLimitsContent =>
+      'Chỉ là công cụ kiểm tra ranh giới cột theo vị trí. Không xác thực quy tắc nghiệp vụ, định dạng ngân hàng hoặc mã hóa EBCDIC.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dữ liệu cục bộ & Quảng cáo';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tất cả văn bản bản ghi được phân tích trong bộ nhớ mà không cần truy cập tệp hoặc tải lên. Biểu ngữ AdMob hiển thị ở dưới.';
 }

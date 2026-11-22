@@ -35,5 +35,19 @@
   "widthTotalTooLarge": "A largura total não pode exceder 10000.",
   "tooManyRows": "O texto não pode exceder 1000 linhas.",
   "textTooLarge": "O texto não pode exceder 100000 caracteres.",
-  "@@locale": "pt"
+  "@@locale": "pt",
+  "helpTooltip": "Ajuda e guia",
+  "helpTitle": "Guia do Inspetor de Registros de Largura Fixa",
+  "helpProblemSolvedTitle": "Problema resolvido",
+  "helpProblemSolvedContent": "Inspeciona registros posicionais de largura fixa (bancários, EDI) conforme as larguras definidas, detectando divergências.",
+  "helpHowToUseTitle": "Como usar",
+  "helpHowToUseContent": "Cole os registros de largura fixa, insira as larguras separadas por vírgula (ex.: 10, 5, 20) e toque em Inspecionar registros.",
+  "helpReadingResultsTitle": "Leitura dos resultados",
+  "helpReadingResultsContent": "Mostra o comprimento esperado, total de linhas, linhas válidas, prévia campo a campo e alerta sobre linhas com erro.",
+  "helpExampleTitle": "Exemplo",
+  "helpExampleContent": "Larguras: \"5, 10\" (Comprimento esperado = 15)\nLinha: \"12345ABCDEFGHIJ\" -> Campo 1: \"12345\", Campo 2: \"ABCDEFGHIJ\" (15 caract. válidos).",
+  "helpLimitsTitle": "Validação e limites",
+  "helpLimitsContent": "Inspetor posicional de colunas. Não valida regras de negócios, formatos bancários ou codificações como EBCDIC.",
+  "helpDataAndPrivacyTitle": "Dados locais e anúncios",
+  "helpDataAndPrivacyContent": "Todos os registros são analisados na memória sem acesso a arquivos ou envio. Um banner do AdMob é exibido abaixo."
 }

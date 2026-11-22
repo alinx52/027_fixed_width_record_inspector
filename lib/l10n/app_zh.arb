@@ -35,5 +35,19 @@
   "widthTotalTooLarge": "字段总宽度不能超过 10000。",
   "tooManyRows": "记录文本不能超过 1000 行。",
   "textTooLarge": "记录文本不能超过 100000 个字符。",
-  "@@locale": "zh"
+  "@@locale": "zh",
+  "helpTooltip": "帮助与指南",
+  "helpTitle": "定宽记录检查器指南",
+  "helpProblemSolvedTitle": "解决的问题",
+  "helpProblemSolvedContent": "离线按照定义的字段宽度检查金融、EDI或主机导出的定宽文本记录，检测长度不符或列边界错位的异常行。",
+  "helpHowToUseTitle": "使用方法",
+  "helpHowToUseContent": "粘贴定宽文本，输入以逗号分隔的各字段宽度（例如 10, 5, 20），然后点击“检查记录”。",
+  "helpReadingResultsTitle": "查看结果",
+  "helpReadingResultsContent": "显示预期行长度、总行数、合规行数，提供按字段切片预览，并标出过短或过长的不合规行。",
+  "helpExampleTitle": "示例",
+  "helpExampleContent": "宽度: \"5, 10\" (预期总长度 = 15字符)\n行: \"12345ABCDEFGHIJ\" -> 字段 1: \"12345\"，字段 2: \"ABCDEFGHIJ\" (合规 15字符)。",
+  "helpLimitsTitle": "验证与限制",
+  "helpLimitsContent": "仅基于字符位置宽度的检查工具。不验证各字段业务逻辑有效性，不保证银行清算格式或EBCDIC等特种编码转换。",
+  "helpDataAndPrivacyTitle": "本地数据与广告",
+  "helpDataAndPrivacyContent": "所有记录文本仅在设备内存中解析，无文件系统访问与网络上传。屏幕底部展示标准Google AdMob横幅广告。"
 }

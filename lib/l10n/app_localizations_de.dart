@@ -140,4 +140,52 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get textTooLarge =>
       'Der Datensatztext darf höchstens 100000 Zeichen haben.';
+
+  @override
+  String get helpTooltip => 'Hilfe & Anleitung';
+
+  @override
+  String get helpTitle => 'Festbreiten-Datensatz-Prüfer-Leitfaden';
+
+  @override
+  String get helpProblemSolvedTitle => 'Gelöstes Problem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Prüft Festbreiten-Datensätze (Bankdaten, EDI) anhand definierter Spaltenbreiten offline auf Längenabweichungen und Verschiebungen.';
+
+  @override
+  String get helpHowToUseTitle => 'Bedienung';
+
+  @override
+  String get helpHowToUseContent =>
+      'Fügen Sie Festbreitendatensätze ein, geben Sie Spaltenbreiten kommagetrennt ein (z.B. 10, 5, 20) und tippen Sie auf Prüfen.';
+
+  @override
+  String get helpReadingResultsTitle => 'Ergebnisse verstehen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Zeigt erwartete Zeilenlänge, Gesamtzeilen, konforme Zeilen, Feld-für-Feld-Vorschau und markiert zu kurze/lange Zeilen.';
+
+  @override
+  String get helpExampleTitle => 'Beispiel';
+
+  @override
+  String get helpExampleContent =>
+      'Breiten: \"5, 10\" (Erwartete Länge = 15)\nZeile: \"12345ABCDEFGHIJ\" -> Feld 1: \"12345\", Feld 2: \"ABCDEFGHIJ\" (Gültige 15 Zeichen).';
+
+  @override
+  String get helpLimitsTitle => 'Validierung & Grenzen';
+
+  @override
+  String get helpLimitsContent =>
+      'Reines Werkzeug zur Prüfung von Spaltenpositionen. Validiert keine Geschäftslogik, Banken-Clearings oder EBCDIC-Codierungen.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale Daten & Werbung';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Alle Datensätze werden im Speicher verarbeitet, ohne Dateizugriff oder Uploads. Unten wird ein AdMob-Banner angezeigt.';
 }

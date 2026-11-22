@@ -134,4 +134,52 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get textTooLarge => '레코드 텍스트는 100000자를 초과할 수 없습니다.';
+
+  @override
+  String get helpTooltip => '도움말 및 안내';
+
+  @override
+  String get helpTitle => '고정폭 레코드 검사기 안내';
+
+  @override
+  String get helpProblemSolvedTitle => '해결하는 문제';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '금융, 공공, 레거시 시스템의 고정폭(Fixed-width) 텍스트 레코드를 정의된 필드 자릿수별로 오프라인 분해하고, 길이가 일치하지 않거나 열 경계가 밀린 행을 감지합니다.';
+
+  @override
+  String get helpHowToUseTitle => '사용 방법';
+
+  @override
+  String get helpHowToUseContent =>
+      '고정폭 텍스트를 붙여넣고 각 필드의 자릿수 너비를 쉼표로 구분하여 입력(예: 10, 5, 20)한 뒤 레코드 검사 버튼을 누릅니다.';
+
+  @override
+  String get helpReadingResultsTitle => '결과 확인';
+
+  @override
+  String get helpReadingResultsContent =>
+      '기대 행 길이, 총 행 수, 정상 행 수와 함께 각 필드별 슬라이스 미리보기 및 길이가 짧거나 긴 비정상 행 번호를 명확히 표시합니다.';
+
+  @override
+  String get helpExampleTitle => '대표 예시';
+
+  @override
+  String get helpExampleContent =>
+      '필드 너비: \"5, 10\" (기대 길이 = 15자)\n행: \"12345ABCDEFGHIJ\" -> 필드 1: \"12345\", 필드 2: \"ABCDEFGHIJ\" (정상 15자).';
+
+  @override
+  String get helpLimitsTitle => '검증 및 제한사항';
+
+  @override
+  String get helpLimitsContent =>
+      '위치 기반 자릿수 경계 검사기입니다. 각 필드 데이터의 비즈니스 유효성, 금융 결제 규격, 특수 인코딩(EBCDIC 등)의 변환을 보증하지 않습니다.';
+
+  @override
+  String get helpDataAndPrivacyTitle => '로컬 데이터 및 광고';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '입력한 레코드는 파일 시스템 접근이나 외부 전송 없이 기기 메모리에서만 파싱됩니다. 화면 하단에 Google AdMob 표준 배너 광고가 표시됩니다.';
 }

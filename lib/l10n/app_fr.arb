@@ -34,5 +34,19 @@
   "widthOutOfRange": "Chaque largeur doit être comprise entre 1 et 1000.",
   "widthTotalTooLarge": "La largeur totale ne peut pas dépasser 10000.",
   "tooManyRows": "Le texte ne peut pas dépasser 1000 lignes.",
-  "textTooLarge": "Le texte ne peut pas dépasser 100000 caractères."
+  "textTooLarge": "Le texte ne peut pas dépasser 100000 caractères.",
+  "helpTooltip": "Aide et guide",
+  "helpTitle": "Guide de l'inspecteur d'enregistrements à largeur fixe",
+  "helpProblemSolvedTitle": "Problème résolu",
+  "helpProblemSolvedContent": "Inspecte les enregistrements à largeur fixe (EDI, bancaires) selon les largeurs de colonnes, détectant les écarts de longueur.",
+  "helpHowToUseTitle": "Mode d'emploi",
+  "helpHowToUseContent": "Collez les enregistrements, saisissez les largeurs séparées par des virgules (ex. 10, 5, 20) et appuyez sur Inspecter.",
+  "helpReadingResultsTitle": "Lecture des résultats",
+  "helpReadingResultsContent": "Affiche la longueur attendue, le total de lignes, les lignes conformes, l'aperçu par champ et signale les lignes non conformes.",
+  "helpExampleTitle": "Exemple",
+  "helpExampleContent": "Largeurs : \"5, 10\" (Longueur attendue = 15)\nLigne : \"12345ABCDEFGHIJ\" -> Champ 1 : \"12345\", Champ 2 : \"ABCDEFGHIJ\" (15 car. valide).",
+  "helpLimitsTitle": "Validations et limites",
+  "helpLimitsContent": "Outil de vérification positionnelle de colonnes. Ne valide pas la logique métier, les formats bancaires ni les encodages EBCDIC.",
+  "helpDataAndPrivacyTitle": "Données locales et publicités",
+  "helpDataAndPrivacyContent": "Tous les enregistrements sont analysés en mémoire sans accès aux fichiers ni téléversement. Une bannière AdMob est affichée en bas."
 }

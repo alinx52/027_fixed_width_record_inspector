@@ -135,4 +135,52 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get textTooLarge => 'El texto no puede superar 100000 caracteres.';
+
+  @override
+  String get helpTooltip => 'Ayuda y guía';
+
+  @override
+  String get helpTitle => 'Guía del inspector de registros de ancho fijo';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema que resuelve';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Inspecciona registros de texto de ancho fijo posicional (bancarios, EDI) según anchos de columna, detectando desajustes de longitud.';
+
+  @override
+  String get helpHowToUseTitle => 'Cómo usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Pega los registros de ancho fijo, introduce los anchos de campo separados por comas (ej. 10, 5, 20) y pulsa Inspeccionar.';
+
+  @override
+  String get helpReadingResultsTitle => 'Interpretación de resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Muestra la longitud esperada, total de líneas, líneas válidas, vista previa por campos y alerta de filas cortas o largas.';
+
+  @override
+  String get helpExampleTitle => 'Ejemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Anchos: \"5, 10\" (Longitud esperada = 15)\nFila: \"12345ABCDEFGHIJ\" -> Campo 1: \"12345\", Campo 2: \"ABCDEFGHIJ\" (Válido 15 caracteres).';
+
+  @override
+  String get helpLimitsTitle => 'Validaciones y límites';
+
+  @override
+  String get helpLimitsContent =>
+      'Inspector posicional de límites de columna. No valida lógica de negocio, formatos bancarios ni codificaciones como EBCDIC.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Datos locales y anuncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todos los registros se analizan en la memoria sin acceso a archivos ni subida a servidores. Se muestra un banner estándar de AdMob.';
 }

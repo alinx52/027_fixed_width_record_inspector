@@ -34,5 +34,19 @@
   "widthOutOfRange": "每個欄位寬度必須介於 1 到 1000。",
   "widthTotalTooLarge": "欄位總寬度不可超過 10000。",
   "tooManyRows": "記錄文字不可超過 1000 列。",
-  "textTooLarge": "記錄文字不可超過 100000 個字元。"
+  "textTooLarge": "記錄文字不可超過 100000 個字元。",
+  "helpTooltip": "說明與指南",
+  "helpTitle": "定寬記錄檢查器指南",
+  "helpProblemSolvedTitle": "解決的問題",
+  "helpProblemSolvedContent": "離線依定義的欄位寬度檢查金融、EDI或大型主機匯出的定寬文字記錄，偵測長度不符或位移錯誤的異常行。",
+  "helpHowToUseTitle": "使用方法",
+  "helpHowToUseContent": "貼上定寬文字，輸入以逗號分隔的各欄位寬度（例如 10, 5, 20），接著點擊「檢查記錄」。",
+  "helpReadingResultsTitle": "查看結果",
+  "helpReadingResultsContent": "顯示預期行長度、總行數、合格行數，提供各欄位切片預覽，並標記過短或過長的異常行。",
+  "helpExampleTitle": "範例",
+  "helpExampleContent": "寬度: \"5, 10\" (預期總長度 = 15字元)\n行: \"12345ABCDEFGHIJ\" -> 欄位 1: \"12345\"，欄位 2: \"ABCDEFGHIJ\" (合規 15字元)。",
+  "helpLimitsTitle": "驗證與限制",
+  "helpLimitsContent": "僅基於字元位置寬度的檢查工具。不驗證欄位業務邏輯有效性，不保證金融清算格式或EBCDIC編碼轉換。",
+  "helpDataAndPrivacyTitle": "本機資料與廣告",
+  "helpDataAndPrivacyContent": "所有記錄文字僅在裝置記憶體中解析，無檔案系統存取或網路傳輸。螢幕底部顯示標準Google AdMob橫幅廣告。"
 }

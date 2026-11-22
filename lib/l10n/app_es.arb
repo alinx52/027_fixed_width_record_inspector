@@ -34,5 +34,19 @@
   "widthOutOfRange": "Cada ancho debe estar entre 1 y 1000.",
   "widthTotalTooLarge": "El ancho total no puede superar 10000.",
   "tooManyRows": "El texto no puede superar 1000 filas.",
-  "textTooLarge": "El texto no puede superar 100000 caracteres."
+  "textTooLarge": "El texto no puede superar 100000 caracteres.",
+  "helpTooltip": "Ayuda y guía",
+  "helpTitle": "Guía del inspector de registros de ancho fijo",
+  "helpProblemSolvedTitle": "Problema que resuelve",
+  "helpProblemSolvedContent": "Inspecciona registros de texto de ancho fijo posicional (bancarios, EDI) según anchos de columna, detectando desajustes de longitud.",
+  "helpHowToUseTitle": "Cómo usar",
+  "helpHowToUseContent": "Pega los registros de ancho fijo, introduce los anchos de campo separados por comas (ej. 10, 5, 20) y pulsa Inspeccionar.",
+  "helpReadingResultsTitle": "Interpretación de resultados",
+  "helpReadingResultsContent": "Muestra la longitud esperada, total de líneas, líneas válidas, vista previa por campos y alerta de filas cortas o largas.",
+  "helpExampleTitle": "Ejemplo",
+  "helpExampleContent": "Anchos: \"5, 10\" (Longitud esperada = 15)\nFila: \"12345ABCDEFGHIJ\" -> Campo 1: \"12345\", Campo 2: \"ABCDEFGHIJ\" (Válido 15 caracteres).",
+  "helpLimitsTitle": "Validaciones y límites",
+  "helpLimitsContent": "Inspector posicional de límites de columna. No valida lógica de negocio, formatos bancarios ni codificaciones como EBCDIC.",
+  "helpDataAndPrivacyTitle": "Datos locales y anuncios",
+  "helpDataAndPrivacyContent": "Todos los registros se analizan en la memoria sin acceso a archivos ni subida a servidores. Se muestra un banner estándar de AdMob."
 }

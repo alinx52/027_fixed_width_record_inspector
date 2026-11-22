@@ -137,4 +137,53 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get textTooLarge => 'Текст не может превышать 100000 символов.';
+
+  @override
+  String get helpTooltip => 'Справка и руководство';
+
+  @override
+  String get helpTitle =>
+      'Руководство по инспектору записей фиксированной ширины';
+
+  @override
+  String get helpProblemSolvedTitle => 'Решаемая задача';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Проверяет позиционные записи фиксированной ширины (банковские выгрузки, EDI) на соответствие колонкам и расхождения в длине.';
+
+  @override
+  String get helpHowToUseTitle => 'Как использовать';
+
+  @override
+  String get helpHowToUseContent =>
+      'Вставьте записи фиксированной ширины, введите ширину полей через запятую (напр. 10, 5, 20) и нажмите «Проверить записи».';
+
+  @override
+  String get helpReadingResultsTitle => 'Чтение результатов';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Отображает ожидаемую длину строки, общее число строк, корректные строки, превью полей и строки с неверной длиной.';
+
+  @override
+  String get helpExampleTitle => 'Пример';
+
+  @override
+  String get helpExampleContent =>
+      'Ширина: \"5, 10\" (Ожидаемая длина = 15)\nСтрока: \"12345ABCDEFGHIJ\" -> Поле 1: \"12345\", Поле 2: \"ABCDEFGHIJ\" (Верно 15 символов).';
+
+  @override
+  String get helpLimitsTitle => 'Проверка и ограничения';
+
+  @override
+  String get helpLimitsContent =>
+      'Инструмент позиционной проверки колонок. Не проверяет бизнес-логику, форматы межбанковского обмена и кодировки (EBCDIC).';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Локальные данные и реклама';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Все записи анализируются в памяти устройства без доступа к файлам и отправки на серверы. Внизу отображается баннер AdMob.';
 }

@@ -342,6 +342,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Record text cannot exceed 100000 characters.'**
   String get textTooLarge;
+
+  /// No description provided for @helpTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Guide'**
+  String get helpTooltip;
+
+  /// No description provided for @helpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Fixed Width Record Inspector Guide'**
+  String get helpTitle;
+
+  /// No description provided for @helpProblemSolvedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Problem Solved'**
+  String get helpProblemSolvedTitle;
+
+  /// No description provided for @helpProblemSolvedContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Inspects fixed-width positional text records (banking, EDI, mainframe exports) against column widths offline, detecting length discrepancies and boundary shifts.'**
+  String get helpProblemSolvedContent;
+
+  /// No description provided for @helpHowToUseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How to Use'**
+  String get helpHowToUseTitle;
+
+  /// No description provided for @helpHowToUseContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste fixed-width records, input comma-separated field widths (e.g. 10, 5, 20), and tap Inspect records to view parsed fields and anomalies.'**
+  String get helpHowToUseContent;
+
+  /// No description provided for @helpReadingResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading Results'**
+  String get helpReadingResultsTitle;
+
+  /// No description provided for @helpReadingResultsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Shows expected line length, total lines, compliant lines, interactive field-by-field previews, and flags rows that are too short or long.'**
+  String get helpReadingResultsContent;
+
+  /// No description provided for @helpExampleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Example'**
+  String get helpExampleTitle;
+
+  /// No description provided for @helpExampleContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Widths: \"5, 10\" (Expected length = 15)\nRow: \"12345ABCDEFGHIJ\" -> Field 1: \"12345\", Field 2: \"ABCDEFGHIJ\" (Valid 15 chars).'**
+  String get helpExampleContent;
+
+  /// No description provided for @helpLimitsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation & Limitations'**
+  String get helpLimitsTitle;
+
+  /// No description provided for @helpLimitsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Positional column boundary inspector only. Does not validate business logic, bank clearing formats, or character encoding variations (EBCDIC).'**
+  String get helpLimitsContent;
+
+  /// No description provided for @helpDataAndPrivacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Data & Ads'**
+  String get helpDataAndPrivacyTitle;
+
+  /// No description provided for @helpDataAndPrivacyContent.
+  ///
+  /// In en, this message translates to:
+  /// **'All record text is parsed in-memory on your device without file system access or external uploads. An AdMob banner is displayed below.'**
+  String get helpDataAndPrivacyContent;
 }
 
 class _AppLocalizationsDelegate

@@ -136,6 +136,54 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get textTooLarge => 'O texto não pode exceder 100000 caracteres.';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia do Inspetor de Registros de Largura Fixa';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Inspeciona registros posicionais de largura fixa (bancários, EDI) conforme as larguras definidas, detectando divergências.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Cole os registros de largura fixa, insira as larguras separadas por vírgula (ex.: 10, 5, 20) e toque em Inspecionar registros.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra o comprimento esperado, total de linhas, linhas válidas, prévia campo a campo e alerta sobre linhas com erro.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Larguras: \"5, 10\" (Comprimento esperado = 15)\nLinha: \"12345ABCDEFGHIJ\" -> Campo 1: \"12345\", Campo 2: \"ABCDEFGHIJ\" (15 caract. válidos).';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Inspetor posicional de colunas. Não valida regras de negócios, formatos bancários ou codificações como EBCDIC.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todos os registros são analisados na memória sem acesso a arquivos ou envio. Um banner do AdMob é exibido abaixo.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -269,4 +317,52 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get textTooLarge => 'O texto não pode exceder 100000 caracteres.';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia do Inspetor de Registros de Largura Fixa';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Inspeciona registros posicionais de largura fixa (bancários, EDI) conforme as larguras definidas, detectando divergências.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Cole os registros de largura fixa, insira as larguras separadas por vírgula (ex.: 10, 5, 20) e toque em Inspecionar registros.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra o comprimento esperado, total de linhas, linhas válidas, prévia campo a campo e alerta sobre linhas com erro.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Larguras: \"5, 10\" (Comprimento esperado = 15)\nLinha: \"12345ABCDEFGHIJ\" -> Campo 1: \"12345\", Campo 2: \"ABCDEFGHIJ\" (15 caract. válidos).';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Inspetor posicional de colunas. Não valida regras de negócios, formatos bancários ou codificações como EBCDIC.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todos os registros são analisados na memória sem acesso a arquivos ou envio. Um banner do AdMob é exibido abaixo.';
 }
